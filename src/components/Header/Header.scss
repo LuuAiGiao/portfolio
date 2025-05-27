@@ -1,0 +1,46 @@
+.pixel-header {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  width: fit-content;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: white;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pixel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.pixel-nav-item {
+  padding: 1rem 1.5rem;
+  color: black;
+  font-size: 17px;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #f49bab;
+    
+    &::after {
+      width: 100%;
+    }
+  }
+  
+  
+  &.active {
+    color: #f49bab;
+    
+    &::after {
+      width: 100%;
+    }
+  }
+}
