@@ -1,0 +1,71 @@
+.certification-group {
+  background: #FFE1E0;
+  border: 3px solid #7F55B1;
+  box-shadow: 6px 6px 0 #9B7EBD;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.group-header {
+  font-size: 1.4rem;
+  color: #7F55B1;
+  text-align: center;
+  margin-bottom: 0.7rem;
+  text-shadow: 2px 2px 0 #F49BAB;
+  position: relative;
+  
+  &::before, &::after {
+    content: "✦";
+    margin: 0 0.8rem;
+    color: #F49BAB;
+  }
+}
+
+.certification-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.certification-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dashed #9B7EBD;
+  
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.certification-marker {
+  color: #F49BAB;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.certification-content {
+  flex: 1;
+}
+
+.certification-date {
+  font-size: 0.9rem;
+  color: #7F55B1;
+  margin-bottom: 0.2rem;
+}
+
+.certification-title {
+  font-size: 1.1rem;
+  color: #7F55B1;
+  margin-bottom: 0.2rem;
+  text-shadow: 1px 1px 0 #F49BAB;
+}
+
+.certification-provider {
+  font-size: 0.9rem;
+  color: #9B7EBD;
+  font-style: italic;
+}

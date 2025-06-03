@@ -1,5 +1,4 @@
 :root {
-  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'VT323', monospace;
   line-height: 1.5;
   font-weight: 400;
@@ -13,6 +12,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:hover {
+  cursor: url('/Cursor3.png') 16 16, auto !important;
+}
+
+canvas {
+  cursor: url('/Cursor3.png') 16 16, auto !important;
 }
 
 a {
@@ -31,6 +39,7 @@ body {
   min-width: 100%;
   min-height: 100vh;
   width: 100%;
+  cursor: url('/Cursor3.png') 0 0, auto;
 }
 
 h1 {

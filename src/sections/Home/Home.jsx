@@ -9,6 +9,12 @@ import { BallCollider, CuboidCollider, Physics, RigidBody, useRopeJoint, useSphe
 import { MeshLineGeometry, MeshLineMaterial } from 'meshline'
 import { Environment, Lightformer, useGLTF, useTexture } from '@react-three/drei';
 import { useControls } from 'leva'
+import HeartIcon from '../../assets/icons/HeartIcon.svg';
+import DownloadIcon from '../../assets/icons/DownloadIcon.svg';
+import BlurText from "../../../Reactbits/BlurText/BlurText";
+import SparklingIcon from '../../assets/icons/SparklingIcon.svg';
+import ResumeBtn from '../../assets/images/ResumeBtn.png';
+
 
 extend({ MeshLineGeometry, MeshLineMaterial })
 // useGLTF.preload('https://assets.vercel.com/image/upload/contentful/image/e5382hct74si/5huRVDzcoDwnbgrKUo1Lzs/53b6dd7d6b4ffcdbd338fa60265949e1/tag.glb')
@@ -32,7 +38,7 @@ function Home() {
             />
             <div className="pixel-frame"></div>
           </div> */}
-          <Canvas camera={{ position: [0, 0, 13], fov: 25 }}>
+          <Canvas camera={{ position: [0, 0, 13], fov: 25 }} style={{ cursor: 'url(/Cursor3.png) 16 16, auto' }}>
             <ambientLight intensity={Math.PI} />
             <Physics interpolate gravity={[0, -40, 0]} timeStep={1 / 60}>
               <Band />
@@ -49,29 +55,44 @@ function Home() {
 
         <div className="home-right">
           <div className="home-intro">
-            <p className="home-greeting pixel-font">Hello, I'm</p>
-            <h1 className="home-name">LUU AI GIAO<span>💤️</span></h1>
+            <p className="home-greeting pixel-font"><img src={SparklingIcon} alt="heart" className="sparkling-icon" />Hello, I'm</p>
+            <div className='home-name-container'>
+            <BlurText
+              text="LUU AI GIAO"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="home-name pixel-font"
+            />
+            <h1 className="home-name pixel-font">
+              <img src={HeartIcon} alt="heart" className="heart-icon" />
+            </h1>
+            </div>
             <p className="home-description pixel-font">
               I'm a Front-end developer. I love designing websites and turning them into code.
             </p>
           </div>
 
           <div className="home-social">
-            <a href="https://facebook.com/lunalshadi" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/luu.aigiao/" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="social-icon" />
             </a>
-            <a href="https://linkedin.com/in/lunalshadi" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/laggg/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="social-icon" />
             </a>
-            <a href="https://github.com/lunalshadi" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/LuuAiGiao" target="_blank" rel="noopener noreferrer">
               <FaGithub className="social-icon" />
             </a>
           </div>
 
 
-          <button className="home-resume-button">
-            + Download Resume
-          </button>
+          {/* <button className="home-resume-button pixel-font">
+            <img src={DownloadIcon} alt="download" className="download-icon" />
+            Download Resume
+          </button> */}
+          <div className="home-resume-button pixel-font">
+            <img src={ResumeBtn} alt="download" className="ResumeBtn" />
+          </div>
         </div>
       </div>
     </section>
@@ -174,7 +195,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                 // map-offset={[0, 0]}
                 map-repeat={[1, 1]}
                 map-wrapS={THREE.ClampToEdgeWrapping}
-  map-wrapT={THREE.ClampToEdgeWrapping}
+                map-wrapT={THREE.ClampToEdgeWrapping}
                 side={THREE.DoubleSide}
               />
             </mesh>

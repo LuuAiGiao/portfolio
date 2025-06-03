@@ -1,0 +1,92 @@
+.education-section {
+//   background: linear-gradient(135deg, #9B7EBD, #FFE1E0);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #9B7EBD, #F49BAB);
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 10px;
+//     background: linear-gradient(90deg, #7F55B1, #F49BAB, #9B7EBD);
+//   }
+}
+
+.section-title-2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #7F55B1;
+  margin-bottom: 2rem;
+  text-shadow: 3px 3px 0 #F49BAB;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     bottom: -10px;
+//     left: 0;
+//     width: 100%;
+//     height: 4px;
+//     background: #9B7EBD;
+//   }
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column-title {
+  font-size: 1.8rem;
+  color: #3d0384;
+  text-shadow: 3px 1px 0 #F49BAB;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px dashed #F49BAB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+
+  .education-icon {
+      width: 40px;
+      height: 40px;
+      margin-left: 12px;
+      // vertical-align: middle;
+      animation: pulse 1.5s infinite;
+    }
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr;
+    
+    .certification-column {
+      order: -1; // Đưa certification lên đầu trên mobile
+    }
+  }
+  
+  .certification-group {
+    padding: 1rem;
+  }
+}
