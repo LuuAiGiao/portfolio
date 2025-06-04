@@ -56,7 +56,7 @@ function Projects() {
         "PayOS Payment Integration: Developed the purchase flow for Package Service using the PayOS payment gateway",
         "Process and Plan Management: Built CRUD interfaces for Process (including Sub-Processes) and Plan (including Sub-Plans) with complex field conditions",
         "Worklog Management: Created CRUD interfaces for Worklog, integrated with a Calendar View to display and manage task schedules",
-        "Farm Owner Dashboard: Developed a comprehensive dashboard displaying farm operation reports using Chart.js",
+        "Farm Owner Dashboard: Developed a comprehensive dashboard displaying farm operation reports",
         "Weather UI: Designed a weather interface integrated with a weather API for real-time conditions"
       ],
       techs: ["REACTJS", "TYPESCRIPT", "SCSS", ".NET", "SQL SERVER"],
@@ -85,11 +85,11 @@ function Projects() {
       role: "UI/UX Designer & Frontend",
       features: [
         "Project Setup: Initialized the mobile app project from scratch, including setting up the development environment, selecting React Native, and organizing a maintainable code structure.",
-        "UI/UX Design and API Integration: Led the majority of UI/UX design and frontend development, crafting nearly all screens and features, from core interfaces to detailed functionalities, with seamless API integration.",
+        "UI/UX Design and API Integration: Handled both UI/UX design and major frontend implementation, building most of the application’s interface and features.",
         "Schedule Management: Built a Calendar View interface for employees to view work schedules (Worklog), with features to request task cancellations and add notes, integrated with backend APIs for data synchronization.",
         "Pest Detection: Developed a feature allowing employees to capture or select images for pomelo pest diagnosis, integrated with Azure Custom Vision API to display accurate results with disease descriptions.",
         "Individual Plant Management: Implemented features like QR code scanning to retrieve plant details, growth stage note recording (Growth Stage Notes), and per-session harvest logging (Harvest Notes), with intuitive UI and robust API integration.",
-        "Notification System: Designed a mobile notification UI using Firebase Cloud Messaging for real-time alerts on tasks, weather, or manager updates.",
+        "Notification System: Designed a mobile notification UI for real-time alerts on tasks, weather, or manager updates.",
         "AI Result Reporting: Created an interface for employees to report incorrect AI results (Report AI Result) and receive expert feedback, ensuring a clear and efficient interaction flow."
       ],
 
@@ -149,13 +149,13 @@ function Projects() {
       id: 4,
       title: "Milk - E-commerce Platform",
       type: "team",
-      role: "Backend Developer",
+      role: "Frontend & Backend Developer",
       features: [
-        "Quản lý công việc theo nhóm",
-        "Tích hợp thông báo email",
-        "API bảo mật với JWT"
+        "Designed UI/UX and implemented both frontend and backend.",
+        "Built product display, add-to-cart, checkout, and MoMo payment flow.",
+        "Developed product feedback feature and store dashboard for order management."
       ],
-      techs: ["NODE.JS", "EXPRESS", "MONGODB", "REACT"],
+      techs: ["NODE.JS", "EXPRESS", "MONGODB", "REACTJS", "TAILWIND CSS"],
       images: [
         { id: 1, img: imgConYeu0 },
         { id: 2, img: imgConYeu1 }
@@ -166,19 +166,19 @@ function Projects() {
       accentColor: "#7F55B1",
       gradient: "linear-gradient(145deg, #7F55B1, #9B7EBD)",
       thumbnail: imgConYeu0,
-      overview: "Milk is a collaborative task management platform designed to streamline team workflows. It allows users to create, assign, and track tasks within teams, enhancing productivity and communication. The platform features real-time notifications via email and secure API access using JWT for authentication. As a Backend Developer, I was responsible for building the server-side logic, database management, and API development to ensure a robust and scalable application."
+      overview: "Milk is an e-commerce platform designed for selling milk to pregnant women and babies. It integrates MoMo payment (for testing purposes) and features a secure API with JWT authentication."
     },
     {
       id: 5,
       title: "Coffee - E-commerce Platform",
       type: "team",
-      role: "Frontend Developer",
+      role: "Frontend & Backend Developer",
       features: [
-        "Dự báo thời tiết theo thời gian thực",
-        "Giao diện pixel art dễ thương",
-        "Tích hợp API OpenWeather"
+        "Designed UI/UX and implemented both frontend and backend.",
+        "Built product display, custom cart, order flow with PayOS integration.",
+        "Implemented email notifications upon successful customer orders."
       ],
-      techs: ["NODE.JS", "EXPRESS", "MONGODB", "REACT"],
+      techs: ["NODE.JS", "EXPRESS", "MONGODB", "REACTJS", "TAILWIND CSS"],
       images: [
         { id: 1, img: imgHoaDat0 },
         { id: 2, img: imgHoaDat1 },
@@ -192,7 +192,7 @@ function Projects() {
       accentColor: "#F49BAB",
       gradient: "linear-gradient(145deg, #F49BAB, #FFE1E0)",
       thumbnail: imgHoaDat0,
-      overview: "Coffee is a weather forecasting application that provides real-time weather updates with a charming pixel art interface. It integrates the OpenWeather API to deliver accurate weather data, including temperature, humidity, and forecasts. As a Frontend Developer, I was responsible for creating the user interface, ensuring a delightful user experience with smooth animations and responsive design."
+      overview: "Coffee is an e-commerce platform for selling coffee that allows users to customize their coffee mixes according to their preferences. It integrates PayOS for real payments. As a Frontend & Backend Developer, I designed the user interface and ensured a seamless user experience with responsive design and smooth animations."
     }
   ];
 

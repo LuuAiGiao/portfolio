@@ -57,16 +57,16 @@ function Home() {
           <div className="home-intro">
             <p className="home-greeting pixel-font"><img src={SparklingIcon} alt="heart" className="sparkling-icon" />Hello, I'm</p>
             <div className='home-name-container'>
-            <BlurText
-              text="LUU AI GIAO"
-              delay={150}
-              animateBy="words"
-              direction="top"
-              className="home-name pixel-font"
-            />
-            <h1 className="home-name pixel-font">
-              <img src={HeartIcon} alt="heart" className="heart-icon" />
-            </h1>
+              <BlurText
+                text="LUU AI GIAO"
+                delay={150}
+                animateBy="words"
+                direction="top"
+                className="home-name pixel-font"
+              />
+              <h1 className="home-name pixel-font">
+                <img src={HeartIcon} alt="heart" className="heart-icon" />
+              </h1>
             </div>
             <p className="home-description pixel-font">
               I'm a Front-end developer. I love designing websites and turning them into code.
@@ -85,14 +85,14 @@ function Home() {
             </a>
           </div>
 
-
-          {/* <button className="home-resume-button pixel-font">
-            <img src={DownloadIcon} alt="download" className="download-icon" />
-            Download Resume
-          </button> */}
-          <div className="home-resume-button pixel-font">
+          <a
+            className="home-resume-button pixel-font"
+            href="/CV-2025.pdf"
+            download="Luu_Ai_Giao_CV.pdf"
+          >
             <img src={ResumeBtn} alt="download" className="ResumeBtn" />
-          </div>
+          </a>
+
         </div>
       </div>
     </section>
@@ -155,7 +155,6 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping
 
   const myPhoto = useTexture(logo);
-  console.log('myPhoto:', myPhoto);
 
   return (
     <>
@@ -188,11 +187,10 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
                 // map={materials.base.map}
                 map={myPhoto}
                 map-anisotropy={16}
-                clearcoat={0.8} // Giảm một chút để không quá bóng
-                clearcoatRoughness={0.25} // Tăng để tạo bề mặt không đều
-                roughness={0.5} // Tăng để giảm độ bóng
-                metalness={0.3} // Giảm để không quá kim loại
-                // map-offset={[0, 0]}
+                clearcoat={0.8}
+                clearcoatRoughness={0.25}
+                roughness={0.5}
+                metalness={0.3}
                 map-repeat={[1, 1]}
                 map-wrapS={THREE.ClampToEdgeWrapping}
                 map-wrapT={THREE.ClampToEdgeWrapping}

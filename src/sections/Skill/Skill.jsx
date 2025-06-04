@@ -17,7 +17,7 @@ import trelloLogo from '../../assets/images/tech-logos/trello.png';
 import notionLogo from '../../assets/images/tech-logos/notion.png';
 import vscodeLogo from '../../assets/images/tech-logos/vscode.png';
 import storybookLogo from '../../assets/images/tech-logos/storybook.png';
-import AILogo from '../../assets/images/tech-logos/AITool.png';
+import AILogo from '../../assets/images/tech-logos/AiTool.png';
 import npmLogo from '../../assets/images/tech-logos/NPM.png';
 import postmanLogo from '../../assets/images/tech-logos/postman.png';
 import jiraLogo from '../../assets/images/tech-logos/jira.png';
@@ -25,6 +25,12 @@ import canvaLogo from '../../assets/images/tech-logos/canva.png';
 import cLogo from '../../assets/images/tech-logos/c.png';
 import javaLogo from '../../assets/images/tech-logos/java.png';
 import pythonLogo from '../../assets/images/tech-logos/python.png';
+import mongodbLogo from '../../assets/images/tech-logos/mongodb.png';
+import mochaLogo from '../../assets/images/tech-logos/mocha.png';
+import jenkinsLogo from '../../assets/images/tech-logos/jenkins.png';
+import seleniumLogo from '../../assets/images/tech-logos/selenium.png';
+import cypressLogo from '../../assets/images/tech-logos/cypress.jpeg';
+import jestLogo from '../../assets/images/tech-logos/jest.png';
 import SparklingIcon from '../../assets/icons/SparklingIcon.svg';
 
 function Skill() {
@@ -44,6 +50,12 @@ function Skill() {
       { name: 'C', logo: cLogo },
       { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
+      { name: 'MongoDB', logo: mongodbLogo },
+      { name: 'Mocha', logo: mochaLogo },
+      { name: 'Jenkins', logo: jenkinsLogo },
+      { name: 'Selenium', logo: seleniumLogo },
+      { name: 'Cypress', logo: cypressLogo },
+      { name: 'Jest', logo: jestLogo },
     ],
     tools: [
       { name: 'GitHub', logo: githubLogo },
@@ -60,7 +72,7 @@ function Skill() {
       { name: 'Canva', logo: canvaLogo },
     ],
     others: [
-      { name: 'English: Intermediate (IELTS ~6.0)', icon: '🇬🇧' },
+      { name: 'English: Good reading & writing, basic verbal communication', icon: '🇬🇧' },
       { name: 'Teamwork', icon: '🤝' },
       { name: 'Communication', icon: '💬' },
       { name: 'Problem Solving', icon: '🧠' },

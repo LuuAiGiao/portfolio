@@ -18,41 +18,44 @@ function App() {
   const contactRef = useRef(null);
 
   const scrollToSection = (ref) => {
+    setActiveSection(ref.current.id);
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
+
 
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '-50% 0px',
-      threshold: 0.1,
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const sectionId = entry.target.getAttribute('data-section');
-          setActiveSection(sectionId);
+          setActiveSection(entry.target.id);
         }
       });
     }, observerOptions);
 
-    const sections = [
-      homeRef.current,
-      aboutRef.current,
-      educationRef.current,
-      skillRef.current,
-      projectsRef.current,
-      contactRef.current,
-    ].filter((ref) => ref !== null);
+    const sectionRefs = [
+      homeRef,
+      aboutRef,
+      educationRef,
+      skillRef,
+      projectsRef,
+      contactRef,
+    ];
 
-    sections.forEach((section) => {
-      section.setAttribute('data-section', section.querySelector('div')?.id || section.id);
-      observer.observe(section);
+    sectionRefs.forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
     });
 
     return () => observer.disconnect();
   }, []);
+
+
 
   return (
     <>
@@ -67,25 +70,26 @@ function App() {
       />
 
       <div className="portfolio-container">
-        <div ref={homeRef}>
+        <div ref={homeRef} id="home">
           <Home />
         </div>
-        <div ref={aboutRef}>
+        <div ref={aboutRef} id="about">
           <About />
         </div>
-        <div ref={educationRef}>
+        <div ref={educationRef} id="education">
           <Education />
         </div>
-        <div ref={skillRef}>
+        <div ref={skillRef} id="skill">
           <Skill />
         </div>
-        <div ref={projectsRef}>
+        <div ref={projectsRef} id="projects">
           <Projects />
         </div>
-        <div ref={contactRef}>
+        <div ref={contactRef} id="contact">
           <Contact />
         </div>
       </div>
+
     </>
   );
 }

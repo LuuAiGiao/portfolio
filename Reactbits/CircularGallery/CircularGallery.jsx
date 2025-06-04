@@ -11,7 +11,6 @@ import {
 
 import './CircularGallery.css';
 import me3 from '../../src/assets/images/me3.png';
-import me4 from '../../src/assets/images/me4.jpg';
 import me5 from '../../src/assets/images/me5.jpg';
 import me6 from '../../src/assets/images/me6.jpg';
 import me7 from '../../src/assets/images/me7.jpg';
@@ -340,7 +339,6 @@ class App {
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
       { image: me3, text: 'Bridge' },
-      { image: me4, text: 'Desk Setup' },
       { image: me5, text: 'Waterfall' },
       { image: me6, text: 'Strawberries' },
       { image: me7, text: 'Deep Diving' },
