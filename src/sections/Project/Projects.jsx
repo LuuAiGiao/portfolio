@@ -10,6 +10,7 @@ import img5 from '../../assets/images/ipas/5.jpg';
 import img6 from '../../assets/images/ipas/6.jpg';
 import img7 from '../../assets/images/ipas/7.jpg';
 import vid1 from '../../assets/images/ipas/0602.mp4';
+import vid2 from '../../assets/images/ipas/0603.mp4';
 import img11 from '../../assets/images/ipas/1.1.jpg';
 import img12 from '../../assets/images/ipas/1.2.jpg';
 import img13 from '../../assets/images/ipas/1.3.jpg';
@@ -70,7 +71,7 @@ function Projects() {
         { id: 7, img: img7 }
       ],
       thumbnail: img1,
-      videos: [vid1],
+      videos: [vid1, vid2],
       githubLink: "https://github.com/LuuAiGiao/Intelligent-Pomelo-AgriSolutions/tree/main/FE/Website/CapstoneProject_SP25_IPAS",
       demoLink: "https://ipas.id.vn/",
       accentColor: "#7F55B1",

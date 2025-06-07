@@ -31,6 +31,7 @@ import jenkinsLogo from '../../assets/images/tech-logos/jenkins.png';
 import seleniumLogo from '../../assets/images/tech-logos/selenium.png';
 import cypressLogo from '../../assets/images/tech-logos/cypress.jpeg';
 import jestLogo from '../../assets/images/tech-logos/jest.png';
+import vueLogo from '../../assets/images/tech-logos/vue.png';
 import SparklingIcon from '../../assets/icons/SparklingIcon.svg';
 
 function Skill() {
@@ -46,6 +47,7 @@ function Skill() {
       { name: 'Tailwind', logo: tailwindLogo },
       { name: 'ReactJS', logo: reactLogo },
       { name: 'React Native', logo: reactNativeLogo },
+      { name: 'Vue', logo: vueLogo },
       { name: 'SASS', logo: sassLogo },
       { name: 'C', logo: cLogo },
       { name: 'Java', logo: javaLogo },
