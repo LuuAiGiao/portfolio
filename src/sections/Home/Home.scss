@@ -194,15 +194,17 @@
   margin-bottom: 2rem;
   font-size: 1.2rem;
   letter-spacing: 0.5rem;
-
+  margin-top: 25px;
 
   .social-icon {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #3d0384;
     transition: transform 0.3s ease, color 0.3s ease;
     border: 2px solid #3d0384;
     border-radius: 8px;
     padding: 0.5rem;
+    width: 45px;
+    height: 45px;
 
     &:hover {
       transform: scale(1.2);
