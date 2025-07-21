@@ -87,8 +87,8 @@ function Home() {
 
           <a
             className="home-resume-button pixel-font"
-            href="/Luu_Ai_Giao_CV_v2.png"
-            download="Luu_Ai_Giao_CV_v2.png"
+            href="/LUU_AI_GIAO_CV.pdf"
+            download="LUU_AI_GIAO_CV.pdf"
           >
             <img src={ResumeBtn} alt="download" className="ResumeBtn" />
           </a>
