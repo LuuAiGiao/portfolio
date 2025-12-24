@@ -16,6 +16,8 @@ import me6 from '../../src/assets/images/me6.jpg';
 import me7 from '../../src/assets/images/me7.jpg';
 import me8 from '../../src/assets/images/me8.jpg';
 import me9 from '../../src/assets/images/me9.jpg';
+import me10 from '../../src/assets/images/me10.jpg';
+import me11 from '../../src/assets/images/me11.jpg';
 
 function debounce(func, wait) {
   let timeout
@@ -338,12 +340,14 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: me3, text: 'Bridge' },
-      { image: me5, text: 'Waterfall' },
+      { image: me9, text: 'Bridge' },
+      { image: me7, text: 'Waterfall' },
       { image: me6, text: 'Strawberries' },
-      { image: me7, text: 'Deep Diving' },
+      { image: me5, text: 'Deep Diving' },
       { image: me8, text: 'Train Track' },
-      { image: me9, text: 'Santorini' },
+      { image: me3, text: 'Santorini' },
+      { image: me10, text: 'Santorini' },
+      { image: me11, text: 'Santorini' },
     ]
     const galleryItems = items && items.length ? items : defaultItems
     this.mediasImages = galleryItems.concat(galleryItems)

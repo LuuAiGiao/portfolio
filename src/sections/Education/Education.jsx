@@ -15,6 +15,7 @@ function Education() {
   ];
 
   const certificationData = [
+    { date: 'Jul 18, 2025', title: 'TOEIC: 805/990 (Advanced Level)', provider: 'ETS (Educational Testing Service)' },
     { date: 'May 21, 2023', title: 'Software Development Lifecycle', provider: '(Coursera)' },
     // { date: 'Jan 18, 2023', title: 'Web Design for Everybody', provider: '(Coursera)' },
     { date: 'Oct, 2023', title: 'BootCamp Frontend Conquer ReactJS Technology', provider: '(FPT Software)' },
